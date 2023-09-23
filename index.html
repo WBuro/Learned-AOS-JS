@@ -5,76 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aos</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         body{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            
+            background-color: #222;
+            color:#fff;
+
+            overflow-x: hidden;
+
         }
+
+        .main-page{
+            height: 100vh;
+        }
+
+        .main-page h1{
+            font-size: 128px;
+            font-weight: 900;
+
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        .main-page h3{
+            font-size: 64px;
+            color: rgb(119, 223, 223);
+            font-weight: 600;
+
+            text-align: center;
+        }
+
+        .second-page{
+            height: 100vh;
+        }
+
+        .second-page h2{
+            
+            font-size: 120px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .card{
+            border: 1px solid rgba(255,255,255,0.02);
+            background: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .card img{
+            width: 650px;
+            height: 400px;
+            padding: 25px;
+        }
+
+        .card-info{
+            text-align: center;
+            margin-top: 120px;
+            height: 1000px;
+        }
+
+        .card-info h3{
+            font-size: 120px;
+            font-weight: 800;
+        }
+
+        .card-info p{
+            font-size: 48px;
+            letter-spacing: 8px;
+            text-align: center;
+        }
+
+
+        .card-info p span{
+            font-size: 56px;
+            color: rgb(119, 223, 223);
+        }
+
     </style>
 
 </head>
 <body>
-    
-<!-- Fade -->
-<div style="color: red;">
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-down">Buro</h1>
-<h1 data-aos="fade-right">Buro</h1>
-<h1 data-aos="fade-left">Buro</h1>
-<h1 data-aos="fade-up-right">Buro</h1>
-<h1 data-aos="fade-up-left">Buro</h1>
-<h1 data-aos="fade-down-left">Buro</h1>
-<h1 data-aos="fade-down-right">Buro</h1>
-</div>
-<!-- Flip -->
-<div style="color: cyan;" data-duration="3000"  data-aos-easing="linear">
-    <h1 data-aos="flip-right">Buro</h1>
-    <h1 data-aos="flip-left">Buro</h1>
-    <h1 data-aos="flip-down">Buro</h1>
-    <h1 data-aos="flip-up">Buro</h1>
+
+
+
+
+
+
+<div class="main-page">
+    <h1 class="title" data-aos="fade-down" data-aos-duration="2000">Aos Testing Webpage</h1>
+    <hr data-aos="zoom-in-down" data-aos-duration="3000">
+    <h3 data-aos="zoom-in" data-aos-duration="2000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, eius!</h3>
 </div>
 
-<!-- Zoom -->
-<h1 data-aos="zoom-in">Buro</h1>
-<h1 data-aos="zoom-out">Buro</h1>
-<h1 data-aos="zoom-in-up">Buro</h1>
-<h1 data-aos="zoom-in-down">Buro</h1>
-<h1 data-aos="zoom-in-left">Buro</h1>
-<h1 data-aos="zoom-in-right">Buro</h1>
-<h1 data-aos="fade-down">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-down">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-down">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
-<h1 data-aos="fade-up">Buro</h1>
+<div class="second-page">
+    <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">Lorem, ipsum dolor.</h2>
 
+    <div class="card">
+        <img src="pennsylvania-coal-town.png" alt="" data-aos="fade-up" data-aos-duration="3000" >
+        <img src="Soir_Blue.png" alt="" data-aos="fade-down" data-aos-duration="2000">
+        <img src="sunday.png" alt="" data-aos="fade-up" data-aos-duration="2000">
+        
+    </div>
 
-
-
-
-
+    <div class="card-info">
+        <h3 data-aos="fade-right" data-aos-duration="2500">Lorem, ipsum.</h3>
+        <p data-aos="fade-right" data-aos-duration="2500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sed rem harum eveniet earum placeat in labore blanditiis, delectus quidem eligendi fuga temporibus enim ut debitis quae unde obcaecati velit consequuntur ex assumenda dignissimos. Natus incidunt, neque earum pariatur fugiat similique praesentium vero culpa, eveniet eius rerum saepe perspiciatis illo. Deleniti, accusantium omnis sunt nihil minus totam asperiores veritatis doloremque magni facilis ea, aspernatur eos soluta est reiciendis odit! Illo error tempora id, ea facilis  <span>cumque impedit. Voluptate ipsa consequuntur repellendus natus ipsum error beatae fugiat veniam ipsam dignissimos eligendi maxime, non provident quisquam velit atque! Libero ipsum nulla praesentium delectus porro quasi exercitationem quam! Itaque, soluta. Ipsa dolorem quae eos. Laboriosam commodi delectus placeat eum repellendus recusandae doloribus quo perfe</span>rendis officiis, quas dolorum laudantium aspernatur, accusamus cumque tenetur? Nemo natus doloribus laboriosam nostrum aspernatur eius modi accusantium, assumenda nam commodi expedita veniam voluptatibus magnam aliquam molestias. Est, blanditiis labore.</p>
+    </div>
+</div>
 
 
 
